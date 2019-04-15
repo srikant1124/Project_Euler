@@ -13,6 +13,7 @@
 		65C0CC57226361A4003219EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C0CC56226361A4003219EF /* Assets.xcassets */; };
 		65C0CC5A226361A4003219EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C0CC58226361A4003219EF /* LaunchScreen.storyboard */; };
 		65C0CC65226361A4003219EF /* Project_EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC64226361A4003219EF /* Project_EulerTests.swift */; };
+		65C0CC70226361BA003219EF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC6F226361BA003219EF /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		65C0CC60226361A4003219EF /* Project_EulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_EulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C0CC64226361A4003219EF /* Project_EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EulerTests.swift; sourceTree = "<group>"; };
 		65C0CC66226361A4003219EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C0CC6F226361BA003219EF /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				65C0CC4F226361A2003219EF /* AppDelegate.swift */,
 				65C0CC51226361A2003219EF /* ViewController.swift */,
+				65C0CC6F226361BA003219EF /* DataModel.swift */,
 				65C0CC53226361A2003219EF /* Main.storyboard */,
 				65C0CC56226361A4003219EF /* Assets.xcassets */,
 				65C0CC58226361A4003219EF /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				65C0CC52226361A2003219EF /* ViewController.swift in Sources */,
 				65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */,
+				65C0CC70226361BA003219EF /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

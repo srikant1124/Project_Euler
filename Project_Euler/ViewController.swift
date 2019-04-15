@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let problem = DataModel(input: 1000)
+        let sum = problem.findSummationOfMultiple(with: 3, inputTwo: 5)
+        print(sum)
     }
-
-
 }
 
