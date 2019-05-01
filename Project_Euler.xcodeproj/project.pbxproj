@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A86D6D22785082003F55F0 /* GenericStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A86D6C22785082003F55F0 /* GenericStack.swift */; };
+		65A86D6F2278524C003F55F0 /* GenericStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A86D6E2278524C003F55F0 /* GenericStackTests.swift */; };
 		65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC4F226361A2003219EF /* AppDelegate.swift */; };
 		65C0CC52226361A2003219EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC51226361A2003219EF /* ViewController.swift */; };
 		65C0CC55226361A2003219EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C0CC53226361A2003219EF /* Main.storyboard */; };
@@ -14,6 +16,13 @@
 		65C0CC5A226361A4003219EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C0CC58226361A4003219EF /* LaunchScreen.storyboard */; };
 		65C0CC65226361A4003219EF /* Project_EulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC64226361A4003219EF /* Project_EulerTests.swift */; };
 		65C0CC70226361BA003219EF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC6F226361BA003219EF /* DataModel.swift */; };
+		65CB9B8C22754DBF004D72E3 /* DivisibleTrangularNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB9B8B22754DBF004D72E3 /* DivisibleTrangularNumber.swift */; };
+		65CB9B8E22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB9B8D22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift */; };
+		65CB9B902275B2F4004D72E3 /* LargeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB9B8F2275B2F4004D72E3 /* LargeSum.swift */; };
+		65CB9B922275B309004D72E3 /* LargeSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB9B912275B309004D72E3 /* LargeSumTests.swift */; };
+		65EA9129226DE5C10072425C /* Grid20x20Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EA9128226DE5C10072425C /* Grid20x20Problem.swift */; };
+		65F24F5B22682A96004F7949 /* LargestProductInSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F24F5A22682A96004F7949 /* LargestProductInSeries.swift */; };
+		65F24F5F22683C00004F7949 /* TimeComplexityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F24F5E22683C00004F7949 /* TimeComplexityProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65A86D6C22785082003F55F0 /* GenericStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStack.swift; sourceTree = "<group>"; };
+		65A86D6E2278524C003F55F0 /* GenericStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStackTests.swift; sourceTree = "<group>"; };
 		65C0CC4C226361A2003219EF /* Project_Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C0CC4F226361A2003219EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65C0CC51226361A2003219EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +49,13 @@
 		65C0CC64226361A4003219EF /* Project_EulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_EulerTests.swift; sourceTree = "<group>"; };
 		65C0CC66226361A4003219EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C0CC6F226361BA003219EF /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		65CB9B8B22754DBF004D72E3 /* DivisibleTrangularNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisibleTrangularNumber.swift; sourceTree = "<group>"; };
+		65CB9B8D22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisibleTrangularNumberTests.swift; sourceTree = "<group>"; };
+		65CB9B8F2275B2F4004D72E3 /* LargeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSum.swift; sourceTree = "<group>"; };
+		65CB9B912275B309004D72E3 /* LargeSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeSumTests.swift; sourceTree = "<group>"; };
+		65EA9128226DE5C10072425C /* Grid20x20Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid20x20Problem.swift; sourceTree = "<group>"; };
+		65F24F5A22682A96004F7949 /* LargestProductInSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargestProductInSeries.swift; sourceTree = "<group>"; };
+		65F24F5E22683C00004F7949 /* TimeComplexityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeComplexityProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65A86D6B2278506F003F55F0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				65A86D6C22785082003F55F0 /* GenericStack.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		65C0CC43226361A2003219EF = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +105,10 @@
 		65C0CC4E226361A2003219EF /* Project_Euler */ = {
 			isa = PBXGroup;
 			children = (
-				65C0CC4F226361A2003219EF /* AppDelegate.swift */,
-				65C0CC51226361A2003219EF /* ViewController.swift */,
-				65C0CC6F226361BA003219EF /* DataModel.swift */,
-				65C0CC53226361A2003219EF /* Main.storyboard */,
+				65A86D6B2278506F003F55F0 /* Others */,
+				65F24F5D22682BBE004F7949 /* App */,
+				65F24F5C22682B0A004F7949 /* Problems */,
 				65C0CC56226361A4003219EF /* Assets.xcassets */,
-				65C0CC58226361A4003219EF /* LaunchScreen.storyboard */,
 				65C0CC5B226361A4003219EF /* Info.plist */,
 			);
 			path = Project_Euler;
@@ -93,10 +117,37 @@
 		65C0CC63226361A4003219EF /* Project_EulerTests */ = {
 			isa = PBXGroup;
 			children = (
+				65CB9B912275B309004D72E3 /* LargeSumTests.swift */,
 				65C0CC64226361A4003219EF /* Project_EulerTests.swift */,
+				65CB9B8D22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift */,
+				65A86D6E2278524C003F55F0 /* GenericStackTests.swift */,
 				65C0CC66226361A4003219EF /* Info.plist */,
 			);
 			path = Project_EulerTests;
+			sourceTree = "<group>";
+		};
+		65F24F5C22682B0A004F7949 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				65F24F5A22682A96004F7949 /* LargestProductInSeries.swift */,
+				65EA9128226DE5C10072425C /* Grid20x20Problem.swift */,
+				65CB9B8B22754DBF004D72E3 /* DivisibleTrangularNumber.swift */,
+				65C0CC6F226361BA003219EF /* DataModel.swift */,
+				65CB9B8F2275B2F4004D72E3 /* LargeSum.swift */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
+		65F24F5D22682BBE004F7949 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				65C0CC58226361A4003219EF /* LaunchScreen.storyboard */,
+				65C0CC53226361A2003219EF /* Main.storyboard */,
+				65C0CC4F226361A2003219EF /* AppDelegate.swift */,
+				65C0CC51226361A2003219EF /* ViewController.swift */,
+				65F24F5E22683C00004F7949 /* TimeComplexityProtocol.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EA9129226DE5C10072425C /* Grid20x20Problem.swift in Sources */,
+				65A86D6D22785082003F55F0 /* GenericStack.swift in Sources */,
+				65CB9B902275B2F4004D72E3 /* LargeSum.swift in Sources */,
+				65F24F5F22683C00004F7949 /* TimeComplexityProtocol.swift in Sources */,
+				65F24F5B22682A96004F7949 /* LargestProductInSeries.swift in Sources */,
 				65C0CC52226361A2003219EF /* ViewController.swift in Sources */,
 				65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */,
 				65C0CC70226361BA003219EF /* DataModel.swift in Sources */,
+				65CB9B8C22754DBF004D72E3 /* DivisibleTrangularNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A86D6F2278524C003F55F0 /* GenericStackTests.swift in Sources */,
 				65C0CC65226361A4003219EF /* Project_EulerTests.swift in Sources */,
+				65CB9B8E22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift in Sources */,
+				65CB9B922275B309004D72E3 /* LargeSumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
