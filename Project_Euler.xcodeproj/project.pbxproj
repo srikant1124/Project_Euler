@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6514D9682279956100C1D755 /* FactorialComputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514D9672279956100C1D755 /* FactorialComputation.swift */; };
+		6514D96A2279993000C1D755 /* FactorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514D9692279993000C1D755 /* FactorialTests.swift */; };
 		65A86D6D22785082003F55F0 /* GenericStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A86D6C22785082003F55F0 /* GenericStack.swift */; };
 		65A86D6F2278524C003F55F0 /* GenericStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A86D6E2278524C003F55F0 /* GenericStackTests.swift */; };
 		65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC4F226361A2003219EF /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6514D9672279956100C1D755 /* FactorialComputation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialComputation.swift; sourceTree = "<group>"; };
+		6514D9692279993000C1D755 /* FactorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialTests.swift; sourceTree = "<group>"; };
 		65A86D6C22785082003F55F0 /* GenericStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStack.swift; sourceTree = "<group>"; };
 		65A86D6E2278524C003F55F0 /* GenericStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStackTests.swift; sourceTree = "<group>"; };
 		65C0CC4C226361A2003219EF /* Project_Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				65A86D6C22785082003F55F0 /* GenericStack.swift */,
+				6514D9672279956100C1D755 /* FactorialComputation.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				65CB9B912275B309004D72E3 /* LargeSumTests.swift */,
+				6514D9692279993000C1D755 /* FactorialTests.swift */,
 				65C0CC64226361A4003219EF /* Project_EulerTests.swift */,
 				65CB9B8D22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift */,
 				65A86D6E2278524C003F55F0 /* GenericStackTests.swift */,
@@ -256,6 +262,7 @@
 				65CB9B902275B2F4004D72E3 /* LargeSum.swift in Sources */,
 				65F24F5F22683C00004F7949 /* TimeComplexityProtocol.swift in Sources */,
 				65F24F5B22682A96004F7949 /* LargestProductInSeries.swift in Sources */,
+				6514D9682279956100C1D755 /* FactorialComputation.swift in Sources */,
 				65C0CC52226361A2003219EF /* ViewController.swift in Sources */,
 				65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */,
 				65C0CC70226361BA003219EF /* DataModel.swift in Sources */,
@@ -269,6 +276,7 @@
 			files = (
 				65A86D6F2278524C003F55F0 /* GenericStackTests.swift in Sources */,
 				65C0CC65226361A4003219EF /* Project_EulerTests.swift in Sources */,
+				6514D96A2279993000C1D755 /* FactorialTests.swift in Sources */,
 				65CB9B8E22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift in Sources */,
 				65CB9B922275B309004D72E3 /* LargeSumTests.swift in Sources */,
 			);

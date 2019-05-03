@@ -22,6 +22,21 @@ class Project_EulerTests: XCTestCase {
         XCTAssertEqual(testSum2, 233168)
     }
     
+    func testGenerateFibonacciSequency() {
+        let model = DataModel(input: 0)
+        model.timeComplexity.startTime()
+       let series = model.generateFibonacciSequence(number: 8)
+        model.timeComplexity.endTime(forMethod: "generateFibonacciSequence")
+        print(series)
+        XCTAssertEqual(series, [0, 1, 1, 2, 3, 5, 8, 13])
+        
+        model.timeComplexity.startTime()
+        let series1 = model.generateFibonacciSequenceOptimized(number: 8)
+        model.timeComplexity.endTime(forMethod: "generateFibonacciSequenceEsay")
+        print(series1)
+        XCTAssertEqual(series1, [0, 1, 1, 2, 3, 5, 8, 13])
+    }
+    
     func testProblem2() {
         let testCase1 = DataModel(input: 0)
         let testSum1 = testCase1.findSumOfEvenValuedFromFibbonaciSequency(withMaxTerm: 8)

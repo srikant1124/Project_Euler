@@ -59,6 +59,35 @@ class DataModel {
         return sum
     }
     
+    @discardableResult
+    func generateFibonacciSequence(number: Int) -> [Int] {
+        var firstValue = 0
+        var secondValue = 1
+        var series = [firstValue, secondValue]
+        for _ in 2..<number {
+            let temp = secondValue
+            secondValue = secondValue + firstValue
+            firstValue = temp
+            series.append(secondValue)
+        }        
+        return series
+    }
+    
+    func generateFibonacciSequenceOptimized(number: Int) -> [Int] {
+        var firstValue = 0
+        var secondValue = 1
+        var series = [firstValue, secondValue]
+        var increament = 2
+        while increament < number {
+            firstValue = firstValue + secondValue
+            secondValue = firstValue + secondValue
+            increament += 2
+            series.append(firstValue)
+            series.append(secondValue)
+        }
+        return series
+    }
+    
     func primeFactorisationOf(number: Int) -> [Int] {
         var mult = [Int]()
         if number < 1 {

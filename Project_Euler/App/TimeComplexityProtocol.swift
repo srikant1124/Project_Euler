@@ -9,9 +9,9 @@
 import Foundation
 
 struct TimeComplexity {
-    /// - private' modifier cannot be used in protocols
+    /// - private' modifier cannot be used for a protocols
     /// - Initial value is not allowed here
-    /// - Default argument not permitted in a protocol method
+    /// - Default argument not permitted for a protocol method
     var start = CFAbsoluteTimeGetCurrent()
     var end = CFAbsoluteTimeGetCurrent()
     var firstLoop = 0
@@ -35,7 +35,7 @@ extension TimeComplexity {
         end = CFAbsoluteTimeGetCurrent()
         if boolValue {
             let timeDifference = end - start
-            let formattedString = String(format: "%0.4f", timeDifference)
+            let formattedString = String(format: "%0.7f", timeDifference)
             print("\(name) = \(formattedString) Seconds\n")
             if firstLoop > 0 {
                 print("No of firstLoop: \(firstLoop)\n")
