@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6513936B227D1A2700EDE84F /* GridAndPhrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513936A227D1A2700EDE84F /* GridAndPhrase.swift */; };
+		6513936E227D1A6B00EDE84F /* GridAndPhraseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513936D227D1A6B00EDE84F /* GridAndPhraseTests.swift */; };
 		6514D9682279956100C1D755 /* FactorialComputation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514D9672279956100C1D755 /* FactorialComputation.swift */; };
 		6514D96A2279993000C1D755 /* FactorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6514D9692279993000C1D755 /* FactorialTests.swift */; };
+		6599F676227BCBD400AF43C5 /* ReversDigitsInInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599F675227BCBD400AF43C5 /* ReversDigitsInInt.swift */; };
+		6599F678227BCBFA00AF43C5 /* ReversDigitsInIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599F677227BCBFA00AF43C5 /* ReversDigitsInIntTests.swift */; };
 		65A86D6D22785082003F55F0 /* GenericStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A86D6C22785082003F55F0 /* GenericStack.swift */; };
 		65A86D6F2278524C003F55F0 /* GenericStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A86D6E2278524C003F55F0 /* GenericStackTests.swift */; };
 		65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C0CC4F226361A2003219EF /* AppDelegate.swift */; };
@@ -38,8 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6513936A227D1A2700EDE84F /* GridAndPhrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAndPhrase.swift; sourceTree = "<group>"; };
+		6513936D227D1A6B00EDE84F /* GridAndPhraseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAndPhraseTests.swift; sourceTree = "<group>"; };
 		6514D9672279956100C1D755 /* FactorialComputation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialComputation.swift; sourceTree = "<group>"; };
 		6514D9692279993000C1D755 /* FactorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialTests.swift; sourceTree = "<group>"; };
+		6599F675227BCBD400AF43C5 /* ReversDigitsInInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversDigitsInInt.swift; sourceTree = "<group>"; };
+		6599F677227BCBFA00AF43C5 /* ReversDigitsInIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversDigitsInIntTests.swift; sourceTree = "<group>"; };
 		65A86D6C22785082003F55F0 /* GenericStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStack.swift; sourceTree = "<group>"; };
 		65A86D6E2278524C003F55F0 /* GenericStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStackTests.swift; sourceTree = "<group>"; };
 		65C0CC4C226361A2003219EF /* Project_Euler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_Euler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,11 +88,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65139368227D19AC00EDE84F /* HowToSolveItByComputer */ = {
+			isa = PBXGroup;
+			children = (
+				6514D9672279956100C1D755 /* FactorialComputation.swift */,
+				6599F675227BCBD400AF43C5 /* ReversDigitsInInt.swift */,
+			);
+			path = HowToSolveItByComputer;
+			sourceTree = "<group>";
+		};
+		65139369227D19F800EDE84F /* HckerEarth */ = {
+			isa = PBXGroup;
+			children = (
+				6513936A227D1A2700EDE84F /* GridAndPhrase.swift */,
+			);
+			path = HckerEarth;
+			sourceTree = "<group>";
+		};
+		6513936C227D1A5100EDE84F /* HackerEarth */ = {
+			isa = PBXGroup;
+			children = (
+				6513936D227D1A6B00EDE84F /* GridAndPhraseTests.swift */,
+			);
+			path = HackerEarth;
+			sourceTree = "<group>";
+		};
+		6513936F227D1ABE00EDE84F /* Project_Euler */ = {
+			isa = PBXGroup;
+			children = (
+				65CB9B912275B309004D72E3 /* LargeSumTests.swift */,
+				6514D9692279993000C1D755 /* FactorialTests.swift */,
+				65C0CC64226361A4003219EF /* Project_EulerTests.swift */,
+				65CB9B8D22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift */,
+			);
+			path = Project_Euler;
+			sourceTree = "<group>";
+		};
+		65139370227D1AD700EDE84F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				65A86D6E2278524C003F55F0 /* GenericStackTests.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		65139371227D1AE500EDE84F /* HowToSolveItByComputer */ = {
+			isa = PBXGroup;
+			children = (
+				6599F677227BCBFA00AF43C5 /* ReversDigitsInIntTests.swift */,
+			);
+			path = HowToSolveItByComputer;
+			sourceTree = "<group>";
+		};
 		65A86D6B2278506F003F55F0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
 				65A86D6C22785082003F55F0 /* GenericStack.swift */,
-				6514D9672279956100C1D755 /* FactorialComputation.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -110,8 +169,10 @@
 		65C0CC4E226361A2003219EF /* Project_Euler */ = {
 			isa = PBXGroup;
 			children = (
-				65A86D6B2278506F003F55F0 /* Others */,
 				65F24F5D22682BBE004F7949 /* App */,
+				65139369227D19F800EDE84F /* HckerEarth */,
+				65139368227D19AC00EDE84F /* HowToSolveItByComputer */,
+				65A86D6B2278506F003F55F0 /* Others */,
 				65F24F5C22682B0A004F7949 /* Problems */,
 				65C0CC56226361A4003219EF /* Assets.xcassets */,
 				65C0CC5B226361A4003219EF /* Info.plist */,
@@ -122,11 +183,10 @@
 		65C0CC63226361A4003219EF /* Project_EulerTests */ = {
 			isa = PBXGroup;
 			children = (
-				65CB9B912275B309004D72E3 /* LargeSumTests.swift */,
-				6514D9692279993000C1D755 /* FactorialTests.swift */,
-				65C0CC64226361A4003219EF /* Project_EulerTests.swift */,
-				65CB9B8D22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift */,
-				65A86D6E2278524C003F55F0 /* GenericStackTests.swift */,
+				6513936F227D1ABE00EDE84F /* Project_Euler */,
+				6513936C227D1A5100EDE84F /* HackerEarth */,
+				65139370227D1AD700EDE84F /* Others */,
+				65139371227D1AE500EDE84F /* HowToSolveItByComputer */,
 				65C0CC66226361A4003219EF /* Info.plist */,
 			);
 			path = Project_EulerTests;
@@ -259,6 +319,7 @@
 			files = (
 				65EA9129226DE5C10072425C /* Grid20x20Problem.swift in Sources */,
 				65A86D6D22785082003F55F0 /* GenericStack.swift in Sources */,
+				6599F676227BCBD400AF43C5 /* ReversDigitsInInt.swift in Sources */,
 				65CB9B902275B2F4004D72E3 /* LargeSum.swift in Sources */,
 				65F24F5F22683C00004F7949 /* TimeComplexityProtocol.swift in Sources */,
 				65F24F5B22682A96004F7949 /* LargestProductInSeries.swift in Sources */,
@@ -266,6 +327,7 @@
 				65C0CC52226361A2003219EF /* ViewController.swift in Sources */,
 				65C0CC50226361A2003219EF /* AppDelegate.swift in Sources */,
 				65C0CC70226361BA003219EF /* DataModel.swift in Sources */,
+				6513936B227D1A2700EDE84F /* GridAndPhrase.swift in Sources */,
 				65CB9B8C22754DBF004D72E3 /* DivisibleTrangularNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A86D6F2278524C003F55F0 /* GenericStackTests.swift in Sources */,
+				6599F678227BCBFA00AF43C5 /* ReversDigitsInIntTests.swift in Sources */,
 				65C0CC65226361A4003219EF /* Project_EulerTests.swift in Sources */,
+				6513936E227D1A6B00EDE84F /* GridAndPhraseTests.swift in Sources */,
 				6514D96A2279993000C1D755 /* FactorialTests.swift in Sources */,
 				65CB9B8E22754F6E004D72E3 /* DivisibleTrangularNumberTests.swift in Sources */,
 				65CB9B922275B309004D72E3 /* LargeSumTests.swift in Sources */,
