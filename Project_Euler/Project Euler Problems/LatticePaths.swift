@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct Paths {
+struct LatticePaths {
     var tree: MatrixToBinaryTree<Int>!
     mutating func getTotalLatticepPath(matrixRow: Int, matrixCol: Int) -> Int {
         let row = matrixRow + 1
         let col = matrixCol + 1
-//        createAndPrintMatrix(matrixRow: row, matrixCol: col)
+        createAndPrintMatrix(matrixRow: row, matrixCol: col)
         let rootNodeValue = TwoDNode(row: 0, col: 0, value: 1)
         self.tree = MatrixToBinaryTree(value: rootNodeValue)
         tree.insertNode(value: rootNodeValue, currentNode: self.tree.rootNode!, maxRow: matrixRow, maxCol: matrixRow)
@@ -22,7 +22,7 @@ struct Paths {
         return leafNodes
     }
     
-    /*func createAndPrintMatrix(matrixRow: Int, matrixCol: Int) {
+    func createAndPrintMatrix(matrixRow: Int, matrixCol: Int) {
         var matrix: Matrix<Int>!
         do {
             var arr = [Int]()
@@ -49,5 +49,5 @@ struct Paths {
             
         }
         return result
-    }*/
+    }
 }
