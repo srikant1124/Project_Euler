@@ -10,25 +10,25 @@ import XCTest
 @testable import Project_Euler
 
 class FactorialTests: XCTestCase {
-    var factModel: FactorialComputation!
+    var model: FactorialComputation!
     override func setUp() {
         super.setUp()
-        factModel = FactorialComputation()
+        model = FactorialComputation()
     }
     
     override func tearDown() {
         super.tearDown()
-        factModel = nil
+        model = nil
     }
     
     func testFactorail() {
-        let number = -9
+        let inputNumber = -9
         var factorial1 = 0.0
         var factorial2 = 0.0
         do {
-            factModel.timeComplexity.startTime()
-            factorial1 = try factModel.factorialOf(number: number)
-            factModel.timeComplexity.endTime(forMethod: "factorialOf")
+            model.timeComplexity.startTime()
+            factorial1 = try model.factorialOf(number: inputNumber)
+            model.timeComplexity.endTime(forMethod: "factorialOf")
         } catch FactorialError.InvalidNumber(let description) {
             print(description)
         } catch let error {
@@ -36,9 +36,9 @@ class FactorialTests: XCTestCase {
         }
         
         do {
-            factModel.timeComplexity.startTime()
-            factorial2 = try factModel.factorialByRecursion(number: number)
-            factModel.timeComplexity.endTime(forMethod: "factorialByRecursion")
+            model.timeComplexity.startTime()
+            factorial2 = try model.factorialByRecursion(number: inputNumber)
+            model.timeComplexity.endTime(forMethod: "factorialByRecursion")
             XCTAssertEqual(factorial1, factorial2)
             print(factorial2)
         } catch FactorialError.InvalidNumber(let description) {
@@ -47,5 +47,4 @@ class FactorialTests: XCTestCase {
             print(error)
         }
     }
-    
 }

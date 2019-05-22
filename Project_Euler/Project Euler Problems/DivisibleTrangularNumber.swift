@@ -93,7 +93,7 @@ class DivisibleTrangularNumber {
         if number == 1 {
             return totalDivisors
         }
-        let primeFactors = primeFactorisationOf(number: number)
+        let primeFactors = PrimeNumbers.primeFactorisation(number: number)
         var map = [Int: Int]()
         for eachPrime in primeFactors {
             if let value = map[eachPrime] {
@@ -114,13 +114,20 @@ class DivisibleTrangularNumber {
         if number <= 1 {
             return []
         }
+        if PrimeNumbers.isPrime(value: number) {
+            return [number]
+        }
         var num = number
         for eachNo in 2...number {
-            if isPrime(value: eachNo) {
-                if num > 1 {
+            if PrimeNumbers.isPrime(value: eachNo) {
+                if 1 < num {
                     if num % eachNo == 0 {
                         primeFactors.append(eachNo)
-                        num = collectPrimeFactors(prime: eachNo, num: num/eachNo, primeFactors: &primeFactors)
+                        num = num/eachNo
+                        while num % eachNo == 0 && num > 0 {
+                            primeFactors.append(eachNo)
+                            num = num / eachNo
+                        }
                     }
                 } else {
                     break
@@ -130,29 +137,10 @@ class DivisibleTrangularNumber {
         return primeFactors
     }
     
-    func isPrime(value: Int) -> Bool {
-        let valueInFloat = Float(value)
-        let sqrootOfValue = Int(sqrt(valueInFloat))
-        if value == 0 || value == 1 {
-            return false
-        }
-        if value == 2 || value == 3 {
-            return true
-        }
-        for index in 2...sqrootOfValue {
-            if value % index == 0 {
-                return false
-            }
-        }
-        return true
-    }
-    
-    func collectPrimeFactors(prime: Int, num: Int, primeFactors: inout [Int]) -> Int {
-        var number = num
-        while number % prime == 0 && number > 0 {
+    func collectPrimeFactors(prime: Int, num: inout Int, primeFactors: inout [Int]) {
+        while num % prime == 0 && num > 0 {
             primeFactors.append(prime)
-            number = number / prime
+            num = num / prime
         }
-        return number
     }
 }

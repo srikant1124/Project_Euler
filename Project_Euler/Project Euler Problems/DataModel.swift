@@ -181,21 +181,6 @@ class DataModel {
         return difference
     }
     
-    func findNthPrimeNumber(nth: Int) -> Int {
-        var counter = 0
-        var nthPrimeNumber = 0
-        var eachNo = 1
-        while counter != nth {
-            timeComplexity.firstLoop += 1
-            if isPrime(value: eachNo) {
-                nthPrimeNumber = eachNo
-                counter += 1
-            }
-            eachNo += 1
-        }
-        return nthPrimeNumber
-    }
-    
     func findTriplatesWhoseSumIsK(wiyhSum: Int) -> Int {
         let sum = wiyhSum
         for aValue in 1...sum {

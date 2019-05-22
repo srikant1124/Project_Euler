@@ -50,9 +50,9 @@ extension TimeComplexity {
     }
 
     mutating func forLooCountsCheck(withLoopCount count: Int) -> Int {
-        for index in 0...count {
+        for _ in 0...count {
             firstLoop += 1
-            for index in 0...count {
+            for _ in 0...count {
                 nestedloop += 1
             }
         }

@@ -91,22 +91,6 @@ class DivisibleTrangularNumberTests: XCTestCase {
         XCTAssertEqual(triangularNo7, 76576500)
     }
     
-    func testPrimeFactorisationOfANumber() {
-        model.timeComplexity.startTime()
-        let primes = model.primeFactorisationOf(number: 36)
-        model.timeComplexity.endTime(forMethod: "testPrimeFactorisationOfANumber")
-        let primeFactors = Set(primes)
-        XCTAssertEqual(primeFactors.count, [2, 3].count)
-    }
-    
-    func testPrimeFactorisationOfANumberCase2() {
-        model.timeComplexity.startTime()
-        let primes = model.primeFactorisationOf(number: 76576500)
-        model.timeComplexity.endTime(forMethod: "testPrimeFactorisationOfANumberCase2")
-        let primeFactors = Set(primes)
-        XCTAssertEqual(primeFactors.count, [2, 3, 5, 7, 11, 13, 17].count)
-    }
-    
     func testFindTotalCountOfDivisorsOfNumber() {
         model.timeComplexity.startTime()
         let divisors = model.findTotalDivisorsCountsOf(number: 36)

@@ -42,7 +42,7 @@
 //
 import Foundation
 
-enum Elements: Int {
+enum TraversalType: Int {
     case top
     case buttom
     case left
@@ -59,7 +59,7 @@ class Grid20x20Problem {
     var maxRowIndex = 0
     func convertStringRowxColumnGrid(string: [Substring], rows: Int, columns: Int) -> [[Int]] {
         let substrings = string
-        var gridRxC = Array(repeating: Array(repeating: 0, count: rows), count: columns)
+        var gridRxC = Array(repeating: Array(repeating: 0, count: columns), count: rows)
         var pointingIndex = 0
         for row in 0..<rows {
             for column in 0..<columns {
@@ -178,14 +178,14 @@ class Grid20x20Problem {
         var maximumProduct = 1
         for row in 0..<rows {
             for column in 0..<columns {
-                let elements1 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .top)
-                let elements2 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .buttom)
-                let elements3 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .left)
-                let elements4 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .right)
-                let elements5 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .topLeft)
-                let elements6 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .topRight)
-                let elements7 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .buttomLeft)
-                let elements8 = getElementsOfIndex(matris: matrix, row: row, col: column, elementsType: .buttomRight)
+                let elements1 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .top)
+                let elements2 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .buttom)
+                let elements3 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .left)
+                let elements4 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .right)
+                let elements5 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .topLeft)
+                let elements6 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .topRight)
+                let elements7 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .buttomLeft)
+                let elements8 = getElementsOfIndex(matris: matrix, row: row, col: column, traversalType: .buttomRight)
                 let product1 = getProductOfArrayOfInts(arr: elements1)
                 let product2 = getProductOfArrayOfInts(arr: elements2)
                 let product3 = getProductOfArrayOfInts(arr: elements3)
@@ -247,14 +247,14 @@ class Grid20x20Problem {
     var colIndex2 = 0
     var colIndex3 = 0
     
-    func getElementsOfIndex(matris: [[Int]], row: Int, col: Int, elementsType: Elements) -> [Int] {
+    func getElementsOfIndex(matris: [[Int]], row: Int, col: Int, traversalType: TraversalType) -> [Int] {
         rowIndex1 = row
         rowIndex2 = row
         rowIndex3 = row
         colIndex1 = col
         colIndex2 = col
         colIndex3 = col
-        switch elementsType {
+        switch traversalType {
         case .top:
             rowMinus(row: row)
         case .buttom:
