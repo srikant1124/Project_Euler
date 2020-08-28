@@ -15,7 +15,7 @@ class PrimeNumbers {
         var nthPrimeNumber = 0
         var eachNo = 1
         while counter != nth {
-            if PrimeNumbers.isPrime(value: eachNo) {
+            if PrimeNumbers.isPrime(number: eachNo) {
                 nthPrimeNumber = eachNo
                 counter += 1
             }
@@ -67,17 +67,17 @@ class PrimeNumbers {
         return sum
     }
     
-    static func isPrime(value: Int) -> Bool {
-        let valueInFloat = Float(value)
+    static func isPrime(number: Int) -> Bool {
+        let valueInFloat = Float(number)
         let sqrootOfValue = Int(sqrt(valueInFloat))
-        if value == 0 || value == 1 {
+        if number == 0 || number == 1 {
             return false
         }
-        if value == 2 || value == 3 {
+        if number == 2 || number == 3 {
             return true
         }
-        for index in 2...sqrootOfValue {
-            if value % index == 0 {
+        for eachNo in 2...sqrootOfValue {
+            if number % eachNo == 0 {
                 return false
             }
         }
@@ -115,7 +115,7 @@ class PrimeNumbers {
     static func bruteForceFindSumOfPrimeNumbersWithin(nValue: Int) -> Int {
         var sum = 0
         for num in 2..<nValue {
-            if isPrime(value: num) {
+            if isPrime(number: num) {
                 sum += num
             }
         }
@@ -129,17 +129,17 @@ class PrimeNumbers {
         if number <= 1 {
             return factors
         }
-        if PrimeNumbers.isPrime(value: number) {
+        if PrimeNumbers.isPrime(number: number) {
             return [number]
         }
         var num = number
         let sqrOfNum = Int(sqrt(Double(number)).rounded(.up))
-        for eachNumber in 2...sqrOfNum where PrimeNumbers.isPrime(value: eachNumber) {
+        for eachNumber in 2...sqrOfNum where PrimeNumbers.isPrime(number: eachNumber) {
             if num > 1 {
                 while num % eachNumber == 0 {
                     factors.append(eachNumber)
                     num = num / eachNumber
-                    if isPrime(value: num) {
+                    if isPrime(number: num) {
                         factors.append(num)
                         return factors
                     }

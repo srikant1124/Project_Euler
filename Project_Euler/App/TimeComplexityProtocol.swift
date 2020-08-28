@@ -28,7 +28,7 @@ extension TimeComplexity {
     
     mutating func startTime() {
         start = CFAbsoluteTimeGetCurrent()
-        initializeLoopsCount()
+        //initializeLoopsCount()
     }
     
     mutating func endTime(forMethod name: String, needToShowTheTimeDifference boolValue: Bool = true) {

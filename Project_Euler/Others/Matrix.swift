@@ -38,6 +38,7 @@ struct Matrix<T>: MatrixProtocol {
     var rowsCount: Int { return arrOfArr.count }
     var columnsCount: Int { return arrOfArr[0].count }
     private var arrOfArr: [[T]]!//[[T.Type]]!
+    
     func getValue(row: Int, col: Int) -> T? {
         return getValueAtPosition(atRow: row, atCol: col)
     }

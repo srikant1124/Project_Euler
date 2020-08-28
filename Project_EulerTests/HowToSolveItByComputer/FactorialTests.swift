@@ -21,6 +21,18 @@ class FactorialTests: XCTestCase {
         model = nil
     }
     
+    func testFactorialOf() {
+        var factorial1 = 0.0
+        do {
+            factorial1 = try model.factorialOf(number: 100)
+            print(factorial1)
+        } catch FactorialError.InvalidNumber(let description) {
+            print(description)
+        } catch let error {
+            print(error)
+        }
+    }
+    
     func testFactorail() {
         let inputNumber = -9
         var factorial1 = 0.0

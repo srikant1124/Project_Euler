@@ -196,7 +196,7 @@ class Project_EulerTests: XCTestCase {
         XCTAssertEqual(multValue, 31875000)
     }
     
-    func testSumNPrimeNumbers() {
+    func SumNPrimeNumbers() {
         let model = DataModel(input: 0)
         model.timeComplexity.startTime()
         let sum1 = model.findSumOfPrimeNumbers(valueOfN: 2000000)

@@ -37,6 +37,7 @@ struct LatticePaths {
     }
     
     func getCountOfpaths(number: Int) -> Double {
+        /*Formula is: (2n)!/(n!)^2 */
         let factModel = FactorialComputation()
         let num = 2 * number
         var result = 0.0

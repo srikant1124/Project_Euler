@@ -11,19 +11,10 @@ import XCTest
 
 class PrimeNumbersTests: XCTestCase {
     
-//    func testfindNthPrimeNumber() {
-//        let nthPrimeNo = PrimeNumbers.findNthPrimeNumber(nth: 6)
-//        XCTAssertEqual(nthPrimeNo, 13)
-//
-//        let nthPrimeNo1 = PrimeNumbers.findNthPrimeNumber(nth: 1)
-//        XCTAssertEqual(nthPrimeNo1, 2)
-//
-//        let nthPrimeNo2 = PrimeNumbers.findNthPrimeNumber(nth: 2)
-//        XCTAssertEqual(nthPrimeNo2, 3)
-//
-//        let nthPrimeNo3 = PrimeNumbers.findNthPrimeNumber(nth: 10001)
-//        XCTAssertEqual(nthPrimeNo3, 104743)
-//    }
+    func findNthPrimeNumber() {
+        let nthPrimeNo3 = PrimeNumbers.findNthPrimeNumber(nth: 1000098)
+        XCTAssertEqual(nthPrimeNo3, 104743) // 1000098th -> 15487429
+    }
 //
 //    func testFind_N_PrimeNumbers_LittleOptimized() {
 //        let sum = PrimeNumbers.findSumOfPrimeNumbersOptimized(valueOfN: 1000)
@@ -35,7 +26,7 @@ class PrimeNumbersTests: XCTestCase {
 //        XCTAssertEqual(76127, sum)
 //    }
     
-    func testPrimeFactorisationOfNumber() {
+    func PrimeFactorisationOfNumber() {
         let arr = PrimeNumbers.primeFactorisation(number: 54624236237)
         XCTAssertEqual([29, 1883594353], arr)
     }

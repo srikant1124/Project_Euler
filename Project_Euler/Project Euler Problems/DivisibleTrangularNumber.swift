@@ -114,12 +114,12 @@ class DivisibleTrangularNumber {
         if number <= 1 {
             return []
         }
-        if PrimeNumbers.isPrime(value: number) {
+        if PrimeNumbers.isPrime(number: number) {
             return [number]
         }
         var num = number
         for eachNo in 2...number {
-            if PrimeNumbers.isPrime(value: eachNo) {
+            if PrimeNumbers.isPrime(number: eachNo) {
                 if 1 < num {
                     if num % eachNo == 0 {
                         primeFactors.append(eachNo)
